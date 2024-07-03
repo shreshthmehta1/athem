@@ -1,9 +1,8 @@
-// import logo from './logo.svg';
-// import athem from './athem.png';
-import alexa from './alexa_2.png';
 import './App.css';
 import React from 'react';
 import * as Icon from 'react-feather';
+import dp from './front.jpg';
+import akm from './cover.png';
 
 // const App = () => {
 //   return <Icon.Camera />
@@ -13,27 +12,17 @@ import * as Icon from 'react-feather';
 function App() {
   return (
     <div className="App">
+  
       <header className="App-header">
-        {/* <img className="App-logo" alt="Athem" src={athem}/> */}
-          <h1>Athem</h1>
+        <img className="App-logo" alt="DR AK MEHTA" src={akm}/>
+          <h1>Dr. A. K. Mehta</h1>
+          {/* <h5> Amplifying Success</h5> */}
+        <a className="App-head" href="https://aws.amazon.com/what-is-cloud-computing"><img height="27px" src="https://d0.awsstatic.com/logos/powered-by-aws.png" alt="Powered by AWS Cloud Computing"></img></a>
         </header>
+  
+  
         <main className="App-main">
-          <br/>
-          <br/>
-          <br/>
         <br/>
-        <br/>
-        <br/>
-
-        <Icon.Coffee />
-        <br/>
-        <br/>
-        <br/>
-        <p>“As an Amazon Associate I earn from qualifying purchases.”</p><br/>
-       
-          <p>An Alexa device can make your life easier by providing hands-free access to information, entertainment, and home automation controls.</p>
-        <p>Proceed to Amazon | Click the icon below</p>
-        <a href="https://amzn.to/3BVEJQx"><img alt="" src={alexa}/></a>
 
         </main>
     </div>
@@ -41,6 +30,3 @@ function App() {
 }
 
 export default App;
-
-
-
