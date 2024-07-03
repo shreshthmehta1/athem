@@ -1,55 +1,72 @@
 .App {
   text-align: center;
+  font-size: calc(.9px + 1vmin);
 }
 
 .App-logo {
-  height: 50vmin;
+  height: 7.2vmin;
   pointer-events: none;
+  /* border-radius: 45%; */
+  padding:0.9%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+.App-logo {
     /* animation: App-logo-spin infinite 5s linear; */
-    animation: glow 10s infinite;
+    /* animation: glow 10s infinite; */
   }
 }
 
 .App-header {
-  background-color:white;
-  min-height: 99vh;
-  display: flex;
-  flex-direction: column;
+  background-color:#45567d;
+  box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
+  min-height:9vh;
+  position: sticky; top: 0;
+  display:flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #45567d;
+  font-size: calc(4px + 2vmin);
+  color: burlywood;
+}
+
+.App-head {
+  width:5.4%;
 }
 
 .App-main {
   background-color:white ;
-  min-height: 99vh;
+  min-height: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(2.7px + 2vmin);
+  font-size: calc(5.4px + .9vmin);
   color:#45567d;
+  margin: auto;
+  box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
+}
+
+a { 
+  text-decoration: none;
+  font-style: italic;
+  color: burlywood; 
 }
 
 .App-footer {
-  background-color: white;
-  min-height: 36vh;
+  background-color: #45567d;
+  min-height: 9vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(2px + 3vmin);
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
-  width: 9%;
+  color: burlywood;
+  width: 18%;
 }
 
 @keyframes App-logo-spin {
@@ -61,7 +78,7 @@
   }
 }
 
-@keyframes flickerAnimation{
+@keyframes flickerAnimation {
   0%   { opacity:1; }
   50%  { opacity:0; }
   100% { opacity:1; }
