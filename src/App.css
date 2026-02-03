@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-size: calc(.9px + 1vmin);
+
 }
 
 .App-logo {
@@ -11,10 +12,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-.App-logo {
+/* .App-logo { */
     /* animation: App-logo-spin infinite 5s linear; */
     /* animation: glow 10s infinite; */
-  }
+  /* } */
 }
 
 .App-header {
@@ -34,17 +35,51 @@
   width:5.4%;
 }
 
-.App-main {
+.App-maina {
   background-color:white ;
   min-height: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(5.4px + .9vmin);
+  font-size: calc(5.4px + 1.8vmin);
   color:#45567d;
   margin: auto;
   box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
+  overflow: hidden;
+  padding:9%;
+ display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+  /* gap: 20px; */
+}
+
+.App-main {
+  background-color:white ;
+  min-height: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5.4px + 1.8vmin);
+  color:#45567d;
+  margin: auto;
+  box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
+  overflow: hidden;
+  padding:9%;
+ display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+  /* gap: 20px; */
+}
+.Column {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.item {
+  margin-bottom: 20px;
 }
 
 a { 
@@ -56,17 +91,22 @@ a {
 .App-footer {
   background-color: #45567d;
   min-height: 9vh;
+  min-height: flex;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(2px + 3vmin);
   color: white;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
 }
 
 .App-link {
   color: burlywood;
-  width: 14%;
+  padding:0.9%;
+  font-style:initial;
 }
 
 @keyframes App-logo-spin {
